@@ -120,6 +120,8 @@ nav ul li+li+li {
 .content {
     max-width: 1000px;
     margin: 50px auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .content h1 {
