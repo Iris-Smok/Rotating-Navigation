@@ -1,7 +1,7 @@
 <h1 align="center">Rotating Navigation</h1>
 
 <p align="center">
-<img src="assets/rotating-navbar-responsive.png" width="1000" height="100%">
+<img src="assets/rotating-navigation-responsive.png" width="1000" height="100%">
 </p>
 
 You can view the deployed website [here](https://iris-smok.github.io/Rotating-Navigation/)
