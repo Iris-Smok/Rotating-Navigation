@@ -78,8 +78,8 @@ body {
 
 
 nav {
-    position: fixed;
-    bottom: 40px;
+    position: absolute;
+    bottom: 50px;
     left: 0;
     z-index: 100;
 }
