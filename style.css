@@ -23,7 +23,7 @@ body {
 
 
 .container.show-nav {
-    transform: rotate(-20deg);
+    transform: rotate(-26deg);
 }
 
 .circle-container {
@@ -71,10 +71,17 @@ body {
     transform-origin: top left;
 }
 
+
 .container.show-nav+nav li {
     transform: translateX(0);
     transition-delay: 0.3s;
 }
+
+.container.show-nav+nav div {
+    transform: translateX(7%);
+    transition: transform 0.7s ease-in;
+}
+
 
 
 nav {
@@ -88,6 +95,7 @@ nav ul {
     list-style: none;
     padding-left: 15px;
 }
+
 
 nav ul li {
     text-transform: uppercase;
@@ -103,11 +111,13 @@ nav ul li i {
 
 }
 
+
 nav ul li+li {
     margin-left: 15px;
     transform: translateX(-150%);
 }
 
+nav ul div,
 nav ul li+li+li {
     margin-left: 30px;
     transform: translateX(-200%);
@@ -138,6 +148,9 @@ nav ul li+li+li {
     line-height: 1.5;
 }
 
+
+/* FOOTER */
+
 footer {
     background-color: #222;
     color: #fff;
@@ -149,6 +162,41 @@ footer p {
     margin: 0 auto;
     padding: 30px;
 }
+
+
+/* SEARCH INPUT */
+
+.search .input {
+    height: 30px;
+    width: 40px;
+    transition: width 0.3s ease;
+}
+
+.btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 185px;
+}
+
+.search.active .btn {
+    transform: translateX(184px);
+}
+
+
+/* MEDIA QUERY */
 
 @media screen and (min-width: 700px) {
     nav {
@@ -163,5 +211,16 @@ footer p {
         padding-left: 30px;
     }
 
+
+    .container.show-nav+nav div {
+        transform: translateX(7%);
+        transition: transform 0.7s ease-in;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .container.show-nav {
+        transform: rotate(-20deg);
+    }
 
 }
