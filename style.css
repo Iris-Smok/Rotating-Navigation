@@ -188,11 +188,13 @@ footer p {
 }
 
 .search.active .input {
-    width: 185px;
+    width: 165px;
+    border: none;
 }
 
 .search.active .btn {
-    transform: translateX(184px);
+    transform: translateX(166px);
+    border: none;
 }
 
 
